@@ -1,0 +1,15 @@
+asgiref==3.2.10
+certifi==2020.12.5
+chardet==4.0.0
+Django==3.1
+django-admin-honeypot==1.1.0
+django-admin-thumbnails==0.2.5
+django-session-timeout==0.1.0
+idna==2.10
+Pillow==7.2.0
+python-decouple==3.4
+pytz==2020.1
+requests==2.25.1
+six==1.15.0
+sqlparse==0.3.1
+urllib3==1.26.3
