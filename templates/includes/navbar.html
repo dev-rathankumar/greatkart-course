@@ -1,32 +1,13 @@
 {% load static %}
 
-<header class="section-header">
-<nav class="navbar p-md-0 navbar-expand-sm navbar-light border-bottom">
-<div class="container">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTop4" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarTop4">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item dropdown">
-      <a href="#" class="nav-link">   English </a>
-    </li>
-    <li class="nav-item dropdown">
-      <a href="#" class="nav-link"> USD </a>
-      <ul class="dropdown-menu small">
-        <li><a class="dropdown-item" href="#">EUR</a></li>
-        <li><a class="dropdown-item" href="#">AED</a></li>
-        <li><a class="dropdown-item" href="#">RUBL </a></li>
-        </ul>
-    </li>
-    </ul>
-    <ul class="navbar-nav">
-    <li><a href="#" class="nav-link"> <i class="fa fa-envelope"></i> Email </a></li>
-    <li><a href="#" class="nav-link"> <i class="fa fa-phone"></i> Call us </a></li>
-  </ul> <!-- list-inline //  -->
-  </div> <!-- navbar-collapse .// -->
+
+<div class="container-fluid" style="text-align:center;background-image: linear-gradient(to right, #3167EB , #7A7A7A);padding:10px;font-weight: 600;position:sticky;top:0;z-index:999;">
+<a href="https://www.udemy.com/course/django-ecommerce-project-based-course-python-django-web-development/?couponCode=DJECOM" style="color: white;text-transform: uppercase;letter-spacing: 2px;"><span>&#x1F525</span> Purchase Full Course on Udemy | Upto 95% Discount <span>&#x1F525</span></a>
 </div> <!-- container //  -->
-</nav>
+
+<header class="section-header">
+
+
 
 <section class="header-main border-bottom">
   <div class="container">
@@ -53,7 +34,7 @@
   <div class="col-lg  col-md-6 col-sm-12 col">
     <form action="{% url 'search' %}" class="search" method='GET'>
       <div class="input-group w-100">
-          <input type="text" class="form-control" style="width:60%;" placeholder="Search" name="keyword">
+          <input type="text" class="form-control" style="width:60%;" placeholder="Search" name="keyword" required>
 
           <div class="input-group-append">
             <button class="btn btn-primary" type="submit">
@@ -86,7 +67,9 @@
             <div class="icon icon-sm rounded-circle border"><i class="fa fa-shopping-cart"></i></div>
             <span class="badge badge-pill badge-danger notify">{{cart_count}}</span>
           </a>
+
         </div> <!-- widgets-wrap.// -->
+
       </div> <!-- col.// -->
 </div> <!-- row.// -->
   </div> <!-- container.// -->
